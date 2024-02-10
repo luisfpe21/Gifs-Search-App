@@ -1,0 +1,25 @@
+<h3>Lista de resultados:</h3>
+<div class="row">
+  <div *ngFor="let gifItem of lstGifCard" class="col-xl-2 col-lg-3 col-md-6 col-sm-6 col-12">
+    <div class="card mb-2 text-center bg-danger bg-opacity-75">
+      <img [src]="gifItem.images.downsized_medium.url" [alt]="gifItem.title" class="card-img-top">
+      <div class="card-body">
+        <p class="card-text">
+          {{gifItem.title}}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<ul class="list-group">
+  <li class="list-group-item">
+    Uno
+  </li>
+  <li class="list-group-item">
+    Dos
+  </li>
+  <li class="list-group-item">
+    Tres
+  </li>
+</ul>
