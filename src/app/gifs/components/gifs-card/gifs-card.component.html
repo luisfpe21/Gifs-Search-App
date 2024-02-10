@@ -1,0 +1,12 @@
+<div class="card mb-2 text-center bg-danger bg-opacity-75">
+  <shared-lazy-image [urlGifFromInput]="gifFromInput.images.downsized_large.url" [titleFromInput]="gifFromInput.title" ></shared-lazy-image>
+  <!-- <img
+    [src]="gifFromInput.images.downsized_medium.url"
+    [alt]="gifFromInput.title"
+    class="card-img-top"> -->
+  <div class="card-body">
+    <p class="card-text">
+      {{gifFromInput.title}}
+    </p>
+  </div>
+</div>

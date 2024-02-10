@@ -1,0 +1,15 @@
+<div class="d-flex justify-content-center">
+  <img
+    [src]="urlGifFromInput"
+    [alt]="titleFromInput"
+    class="card-img-top animate__animated animate__fadeIn"
+    (load)="onLoadImage()"
+    [ngStyle]="{ display:hasLoaded ? '' : 'none' }"
+  >
+  <img *ngIf="!hasLoaded"
+    src="assets/loader_hears.svg"
+    height="35"
+    width="70"
+    class="mt-3"
+  >
+</div>
